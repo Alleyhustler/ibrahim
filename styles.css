@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #1a0e05;
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.header .social-icons a {
+    color: white;
+    margin-left: 15px;
+    font-size: 1.5em;
+}
+
+
+.content {
+    padding: 40px 4%;
+    display: flex;
+    align-items: center; /* Center vertically */
+    gap: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text {
+    flex: 1; /* Take up remaining space */
+    font-size: 1.5em; /* Adjust the font size */
+}
+
+.text h2 {
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.image {
+    flex: 1; /* Take up remaining space */
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 330px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 40px 10%;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.banner {
+    height: 800px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
