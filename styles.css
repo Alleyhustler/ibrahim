@@ -1,0 +1,57 @@
+/* Resetting default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Full-page background image */
+body {
+    background: url('images/fibonacci\ back.avif') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* Social Media Icons in top-right corner */
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.icon {
+    width: 40px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+/* Overlay Image */
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-image img {
+    width: 300px;
+    animation: rotate 10s linear infinite;
+}
+
+/* Rotation Animation */
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
